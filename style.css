@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8DC; /* Light Yellow Background */
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.completed {
+    color: green;
+    font-weight: bold;
+}
+
+.not-completed {
+    color: red;
+    font-weight: bold;
+}
+
+.completed::before {
+    content: "✔️ ";
+    color: green;
+}
+
+.not-completed::before {
+    content: "❌ ";
+    color: red;
+}
+
+.delete-btn {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
